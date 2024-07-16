@@ -1,0 +1,22 @@
+<app-search [id]="id" [name]="name" [status]="status" [species]="species" [gender]="gender" (emitRadio)="getCharector($event)">
+</app-search>{{getchar}}
+<table class="table table-dark">
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Charector Name</th>
+            <th scope="col">Status</th>
+            <th scope="col">Species</th>
+            <th scope="col">Gender</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let ep of netflix|search:getchar;let i=index">
+            <td>{{i+1}}</td>
+            <td>{{ep.name}}</td>
+            <td>{{ep.status}}</td>
+            <td>{{ep.species}}</td>
+            <td>{{ep.gender}}</td>
+        </tr>
+    </tbody>
+</table>

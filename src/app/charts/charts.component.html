@@ -1,0 +1,57 @@
+<div class="maindiv"><div class="filter-container" style="margin-top: 90px;">
+  <div class="dropdown">
+    <label for="endYear">End Year:</label>
+    <select id="endYear" [(ngModel)]="filters.end_year" (change)="applyFilters()">
+      <option value="">All</option>
+      <option *ngFor="let item of getUniqueValues('end_year')" [value]="item">{{ item }}</option>
+    </select>
+  </div>
+  <div class="dropdown">
+    <label for="topic">Topic:</label>
+    <select id="topic" [(ngModel)]="filters.topic" (change)="applyFilters()">
+      <option value="">All</option>
+      <option *ngFor="let item of getUniqueValues('topic')" [value]="item">{{ item }}</option>
+    </select>
+  </div>
+  <div class="dropdown">
+    <label for="sector">Sector:</label>
+    <select id="sector" [(ngModel)]="filters.sector" (change)="applyFilters()">
+      <option value="">All</option>
+      <option *ngFor="let item of getUniqueValues('sector')" [value]="item">{{ item }}</option>
+    </select>
+  </div>
+  <div class="dropdown">
+    <label for="region">Region:</label>
+    <select id="region" [(ngModel)]="filters.region" (change)="applyFilters()">
+      <option value="">All</option>
+      <option *ngFor="let item of getUniqueValues('region')" [value]="item">{{ item }}</option>
+    </select>
+  </div>
+  <div class="dropdown">
+    <label for="pestle">PEST:</label>
+    <select id="pestle" [(ngModel)]="filters.pestle" (change)="applyFilters()">
+      <option value="">All</option>
+      <option *ngFor="let item of getUniqueValues('pestle')" [value]="item">{{ item }}</option>
+    </select>
+  </div>
+  <div class="dropdown">
+    <label for="source">Source:</label>
+    <select id="source" [(ngModel)]="filters.source" (change)="applyFilters()">
+      <option value="">All</option>
+      <option *ngFor="let item of getUniqueValues('source')" [value]="item">{{ item }}</option>
+    </select>
+  </div>
+  
+  <div class="dropdown">
+    <label for="country">Country:</label>
+    <select id="country" [(ngModel)]="filters.country" (change)="applyFilters()">
+      <option value="">All</option>
+      <option *ngFor="let item of getUniqueValues('country')" [value]="item">{{ item }}</option>
+    </select>
+  </div>
+  
+</div>
+
+<div id="barChart"></div>
+<div id="pieChart"></div>
+<div id="lineChart"></div></div>

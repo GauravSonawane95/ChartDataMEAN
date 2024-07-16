@@ -1,0 +1,46 @@
+.navdiv {
+    border: 0.2rem solid rgb(175, 173, 173);
+    border-radius: 1rem;
+    width: 98%;
+  }
+  .nav-item {
+    display: inline;
+  }
+  .navicon {
+    height: 20px;
+    width: 20px;
+  }
+  .card{
+    height:6rem;
+    width: 6rem;
+   
+    border-radius: 0px;
+  }
+  .dpmenu{
+width:215px;
+
+padding-left: 23px;
+padding-right: 20px;
+  }
+ .row i{
+    margin-left: 5px;
+    margin-top: 10px;
+ }
+  .row p{
+    text-align: left;
+    font-size: 10px;
+
+    width: 5rem;
+  }
+  
+  @media (min-width: 756px) {
+    .navbar-brand {
+      margin-right: 0rem;
+    }
+  }
+  @media (min-width: 459px) {
+    .navbar-brand {
+      margin-right: 0rem;
+    }
+  }
+  
